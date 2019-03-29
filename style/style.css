@@ -7,9 +7,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
   margin: 0px;
   width: 100%;
-  height: 100%;
+  height: 700px;
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -23,10 +24,85 @@ body {
   color: white;
 }
 
+.header__list {
+  width: 150px;
+  display: flex;
+  font-size: 14px;
+  list-style: none;
+  position: relative;
+  top: -1px;
+}
+
+.header__list__item {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.file__list__img {
+width: 20px;
+padding-right: 10px;
+margin-bottom: -5px;
+}
+
+.header__list__item:hover {
+  color: orange;
+}
+
+.files__list {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  list-style: none;
+  display: none;
+}
+
+.files__list__item {
+  color: white;
+  height: 25%;
+  line-height: 3.5;
+  padding-left: 15px;
+}
+
+.files__list__item:hover {
+  color: orange;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__list__item:hover > .files__list {
+  display: block;
+}
+
+.fav__list {
+  width: 200px;
+  height: 150px;
+  font-size: 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  list-style: none;
+  position: relative;
+  top: -50px;
+  left: 185px;
+  opacity: 0;
+}
+
+.fav__list__item {
+  padding-left: 15px;
+  height: 25%
+}
+
+.fav__list__item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: orange;
+}
+
+.files__list__item:hover > .fav__list {
+opacity: 1;
+}
+
 .header__title {
   font-size: 14px;
-  text-decoration: none;
   color: white;
+  display: block;
 }
 
 .header__activities {
@@ -40,14 +116,17 @@ body {
 }
 
 .header__time {
-  display: block;
   margin: 0 auto;
 }
 
 .header__icons {
-  display: block;
   margin-top: 7px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.fas:hover {
+  color: orange;
 }
 
 .nav {
@@ -55,7 +134,7 @@ body {
   float: left;
   padding: 5px;
   width: 60px;
-  height: 750px;
+  height: 690px;
   background-color: rgba(0, 0, 0, 0.7)
 }
 
@@ -75,17 +154,24 @@ body {
   cursor: pointer;
 }
 
-.nav__img:hover {
-  -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-    transition: .4s;
-}
+
 .nav__burger {
   position: absolute;
-  bottom: 20px;
+  top: 650px;
   left: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
 }
+
+.nav__img:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: .4s;
+}
+
 .bugrer__line {
   width: 30px;
   display: flex;
@@ -99,12 +185,72 @@ body {
   background-color: white;
 }
 
+.nav__burger:hover .burger__point {
+  background-color: orange;
+}
+
 .launchpad {
-  width: 1000px;
-  height: 600px;
-  background-color:  rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -620px;
+  left: -10px;
+  margin-left: 2px;
+  width: 1270px;
+  height: 700px;
+  background-color:  rgba(0, 0, 0, 0.4);
+  display: none;
+
+}
+
+.nav__burger:hover .launchpad {
+  display: block;
+}
+
+.container {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.lp__search {
+margin: 0 auto;
+width: 400px;
+height: 40px;
+background-color: rgba(0, 0, 0, 0.4);
+border: 0px;
+color: darkgrey;
+text-align: center;
+margin-left: 125px;
+}
+
+.lp__list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.lp__item {
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  font-size: 16px;
 }
 
 .lp__img {
-  width: 40px;
+  width: 70px;
+  margin-left: 30%;
+  margin-top: 30%;
+  cursor: pointer;
+}
+
+.lp__img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: .4s;
 }

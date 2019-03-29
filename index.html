@@ -3,34 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title>Linux OS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
   </head>
   <body>
-    <header>
+
       <header class="header">
-        <a href="#" class="header__activities header__title">Activities</a>
-        <a href="#" class="header__files header__title">Files</a>
-        <h2 class="header__time header__title">Mon 12:24</h2>
-        <i class="header__icons fas fa-volume-down"></i>
-        <i class="header__icons fas fa-battery-quarter"></i>
-        <i class="header__icons fas fa-chevron-down"></i>
+        <ul class="header__list">
+          <li class="header__list__item">Activities</li>
+          <li class="header__list__item">Files
+            <ul class="files__list">
+              <li class="files__list__item"><img class="file__list__img"src="img/clock.png" alt="recents">Recents</li>
+              <li class="files__list__item"><img class="file__list__img"src="img/archive.png" alt="recents">Documents</li>
+              <li class="files__list__item"><img class="file__list__img"src="img/disc.png" alt="recents">Disc</li>
+              <li class="files__list__item"><img class="file__list__img"src="img/fav.png" alt="recents">Favorite
+                <ul class="fav__list">
+                  <li class="fav__list__item">Facebook</li>
+                  <li class="fav__list__item">Twitter</li>
+                  <li class="fav__list__item">Music</li>
+                  <li class="fav__list__item">Downloads</li>
+                </ul>
+              </li>
+            </ul> </li>
+          </ul>
+          <h2 class="header__time header__title">Mon 12:24</h2>
+          <i class="header__icons fas fa-volume-down"></i>
+          <i class="header__icons fas fa-battery-quarter"></i>
+          <i class="header__icons fas fa-chevron-down"></i>
       </header>
-    </header>
 
   <aside class="nav">
     <ul class="nav__list">
-    <li class="nav__list__item"><img class="nav__img nav__firefox" src="img/firefox.png" alt="files"></li>
-    <li class="nav__list__item"><img class="nav__img nav__music" src="img/music.png" alt="files"></li>
-    <li class="nav__list__item"><img class="nav__img nav__files" src="img/files.png" alt="files"></li>
-    <li class="nav__list__item"><img class="nav__img nav__amazon" src="img/amazon.png" alt="files"></li>
-    <li class="nav__list__item"><img class="nav__img nav__email" src="img/email.png" alt="files"></li>
-    <li class="nav__list__item"><img class="nav__img nav__firefox" src="img/files.png" alt="files"></li>
-    <li class="nav__list__item"><img class="nav__img nav__firefox" src="img/files.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__firefox" title="Firefox" src="img/firefox.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__music" title="Music" src="img/music.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__files" title="Files" src="img/files.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__amazon" title="Amazon" src="img/amazon.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__email" title="Mail" src="img/email.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__facebook" title="Facebook" src="img/facebook.png" alt="files"></li>
+    <li class="nav__list__item"><img class="nav__img nav__airplane" title="Airplane" src="img/airplane.png" alt="files"></li>
+    <li class="burger"> <div class="nav__burger">
+      <div class="bugrer__line">
+        <div class="burger__point"></div>
+        <div class="burger__point"></div>
+        <div class="burger__point"></div>
+      </div>
+
+      <div class="bugrer__line">
+        <div class="burger__point"></div>
+        <div class="burger__point"></div>
+        <div class="burger__point"></div>
+      </div>
+
+      <div class="bugrer__line">
+        <div class="burger__point"></div>
+        <div class="burger__point"></div>
+        <div class="burger__point"></div>
+      </div>
+      <ul>
+        <div class="launchpad">
+          <div class="container">
+            <p><input class="lp__search" type="search" name="q" placeholder="Search...">
+            <ul class="lp__list">
+              <li class="lp__item"><img class="lp__img"src="img/airplane.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/amazon.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/music.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/files.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/firefox.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/books.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/facebook.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/messenger.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/skype.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/twitter.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/youtube.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/github.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/foursquare.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/instagram.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/gmail.png" alt="mail"> </li>
+              <li class="lp__item"><img class="lp__img"src="img/chrome.png" alt="mail"> </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </ul>
+    </li>
     </ul>
 
-    <div class="nav__burger">
+    <!--<a class="burger" href="#"> <div class="nav__burger">
       <div class="bugrer__line">
         <div class="burger__point"></div>
         <div class="burger__point"></div>
@@ -48,21 +109,39 @@
         <div class="burger__point"></div>
         <div class="burger__point"></div>
       </div>
-    </div>
-
+    </a>
+-->
   </aside>
 
+<main class="main">
 
-    <div class="launchpad">
+<!--    <div class="launchpad">
       <div class="container">
-        <ol class="lp__list">
-          <li class="lp__item"><img class="lp__img"src="img/email.png" alt="mail"> </li>
-        </ol>
+        <p><input class="lp__search" type="search" name="q" placeholder="Search...">
+        <ul class="lp__list">
+          <li class="lp__item"><img class="lp__img"src="img/airplane.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/amazon.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/music.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/files.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/firefox.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/books.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/facebook.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/messenger.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/skype.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/twitter.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/youtube.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/github.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/foursquare.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/instagram.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/gmail.png" alt="mail"> </li>
+          <li class="lp__item"><img class="lp__img"src="img/chrome.png" alt="mail"> </li>
+        </ul>
 
       </div>
 
-    </div>
+    </div> -->
 
+</main>
 
 
   </body>
